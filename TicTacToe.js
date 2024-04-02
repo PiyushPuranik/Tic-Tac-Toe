@@ -72,9 +72,10 @@ const TicTacToe = () => {
     setLock(false);
     data = ["", "", "", "", "", "", "", "", ""];
     titleRef.current.innerHTML = "Tic Tac Toe In <span>React</span>";
-    box_array.map((e) => {
+    box_array.forEach((e) => {
+        // Use the current property of the reference to access the DOM element
         e.current.innerHTML = "";
-    })
+    });
   };
 
   return (
